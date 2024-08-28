@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+CSS Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+	Main Style 
+	First Color:	 	#A594F9 #67AAF9
+	Second Color:		#03045E
+	Third Color: 		#1D1E18
+	Background Color:	#FCFAF9
+		Text Color:		#5E5E5E
+*/
+
+html{
+	color: #5E5E5E;
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+
+/* Container Style */
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	padding: 40px;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/* Left Side */
+
+.container .left_side{
+	position:relative;
+	background: #67AAF9;
+}
+
+.profileText {
+	padding-top: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBox{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profileText .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	object-fit: over;
+}
+
+.profileText h1{
+	color: #FCFAF9;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight:600;
+	line-height: 1.4em;
+}
+
+.profileText h1 span{
+	font-size: 0.8em;
+	font-weight: 100;
+}
+
+.contactInfo {
+	padding-top: 40px;
+	margin-left: 40px;
+}
+
+.title{
+	color:#FCFAF9;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.contactInfo ul{
+	position: relative;
+}
+
+.contactInfo ul li{
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.contactInfo ul li .icon{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #03045E;
+}
+
+.contactInfo ul li span{
+	color: #FCFAF9;
+	font-weight: 300;
+}
+
+.contactInfo.education li{
+	margin-bottom: 15px;
+}
+.contactInfo.education li *{
+	margin: 10px;
+}
+
+.contactInfo.education h4{
+	color: #03045E;
+	font-weight: 600;
+}
+.contactInfo.education h5{
+	color: #FCFAF9;
+	font-weight: 300;
+}
+.contactInfo.education h5:nth-child(2){
+	color: #FCFAF9;
+	font-weight: 500;
+}
+
+.contactInfo.contactInfo.language li{
+	padding-right:20px;
+}
+.contactInfo.language .percent{
+	position: relative;
+	width:100%;
+	height:6px;
+	background: #1D1E18;
+	display: block;
+	margin-top: 5px;
+}
+
+.contactInfo.language .percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #FCFAF9;
+
+}
+/* Right Side */
+
+.container .right_side{
+	position:relative;
+	background: #FCFAF9
+}
