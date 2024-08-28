@@ -215,5 +215,42 @@ body {
 
 .container .right_side{
 	position:relative;
-	background: #FCFAF9
+	background: #FCFAF9;
+	padding-left: 30px;
+}
+
+.about {
+	margin-bottom: 50px;
+}
+
+.about p{
+	color:#1D1E18;
+}
+.about:last-child{
+	margin-bottom: 0px;
+}
+
+.title2{
+	color:#03045E;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+.about .box{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.about .box .year_company{
+	min-width: 230px;
+}
+
+.about .box .year_company h5{
+	text-transform: uppercase;
+	color: #03045E;
 }
