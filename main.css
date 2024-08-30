@@ -220,7 +220,7 @@ body {
 }
 
 .about {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .about p{
@@ -253,4 +253,63 @@ body {
 .about .box .year_company h5{
 	text-transform: uppercase;
 	color: #03045E;
+	margin-bottom: 10px;
+}
+.about .box .text h4{
+	margin-bottom: 10px;
+	color: #1D1E18;
+	font-weight: 800;
+}
+
+.about .box .text li{
+	margin-bottom: 10px;
+}
+
+.skills .box {
+	/* padding-right: 10px; */
+	position: relative;
+	width:100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills .box h4{
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #5E5E5E;
+}
+
+.skills .box .percent{
+	position: relative;
+	width: 95%;
+	height:10px;
+	background-color: #f0f0f0;
+}
+
+.skills .box .percent div{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	background: #67AAF9;
+}
+
+@media(max-width: 800px)
+{
+	.container{
+		margin:10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.contactInfo {
+		padding-top: 40px;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+	.about .box {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0px;
+	}
 }
